@@ -1,0 +1,24 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PaymentGateway.Api.Models;
+
+public class PaymentDetailRequest
+{
+    [JsonPropertyName("card_number")]
+    public string CardNumber { get; set; }
+
+
+    [JsonPropertyName("expiry_date")]
+    public string ExpiryDate { get; set; }
+
+
+    [JsonPropertyName("currency")]
+    public string Currency { get; set; }
+
+
+    [JsonPropertyName("amount")]
+    public decimal Amount { get; set; }
+
+    [JsonPropertyName("cvv")]
+    public string CVV { get; set; }
+}

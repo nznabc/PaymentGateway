@@ -1,0 +1,25 @@
+# True response
+
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+    "card_number": "2222405343248877",
+    "expiry_date": "04/2025",
+    "currency": "GBP",
+    "amount": 100,
+    "cvv": "123"
+}
+
+### 
+# False response
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+    "card_number": "2222405343248112",
+    "expiry_date": "01/2026",
+    "currency": "USD",
+    "amount": 60000,
+    "cvv": "456"
+}
