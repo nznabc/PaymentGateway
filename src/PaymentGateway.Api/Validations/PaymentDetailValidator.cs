@@ -1,6 +1,8 @@
 ﻿using FluentValidation;
 
-namespace PaymentGateway.Api.Models;
+using PaymentGateway.Api.Models;
+
+namespace PaymentGateway.Api.Validations;
 
 public class PaymentDetailValidator : AbstractValidator<PaymentDetail>
 {

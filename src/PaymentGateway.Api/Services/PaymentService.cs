@@ -1,6 +1,7 @@
 ﻿using PaymentGateway.Api.Mappings;
 using PaymentGateway.Api.Models;
 using PaymentGateway.Api.Services.Interfaces;
+using PaymentGateway.Api.Validations;
 
 namespace PaymentGateway.Api.Services;
 
